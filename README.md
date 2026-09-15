@@ -1,40 +1,50 @@
-# Plantilla PIAPC para repositorios individuales
+# SpiderBlanc
 
-Esta plantilla prepara un repositorio publico e individual para proyectos academicos de videojuegos. Es independiente del motor, lenguaje y tipo de juego.
+Prototipo de juego realizado con **Phaser 3** (v3.60.0) vía CDN, sin build ni instalación de dependencias.
 
-## Como usarla
-
-1. Crea un repositorio individual desde esta plantilla y conserva el commit inicial.
-2. Completa los datos de este archivo y de `GDD.md` cuando la consigna defina el problema de diseno.
-3. Agrega el proyecto creado con el motor elegido, sin mezclar archivos de otros motores.
-4. Incorpora al `.gitignore` las reglas oficiales o recomendadas para ese motor.
-5. Completa los documentos de `docs/` en el orden indicado por `docs/README.md`.
-6. Conserva commits pequenos y revisables durante el desarrollo.
+> Repositorio creado a partir de la plantilla PIAPC para repositorios individuales.
 
 ## Datos del proyecto
 
-- Estudiante: [PENDIENTE]
-- Materia, comision y anio: [PENDIENTE]
-- Nombre del proyecto: [PENDIENTE]
-- Motor y version: [PENDIENTE]
-- Estado: [PENDIENTE]
+- Estudiante: [PENDIENTE - completar con tu nombre]
+- Materia, comision y anio: [PENDIENTE - completar]
+- Nombre del proyecto: SpiderBlanc
+- Motor y version: Phaser 3 (v3.60.0) vía CDN, JavaScript puro
+- Estado: Prototipo jugable (juego simple de esquivar obstaculos)
 
 ## Descripcion
 
-[Explica brevemente el juego o prototipo y su objetivo actual.]
+Eres una arana blanca con detalles rosas y manchas negras que debe esquivar
+rocas y bichos que caen del cielo dentro de una cueva. Todo el arte es **pixel
+art** generado proceduralmente (araña, obstaculos y cueva se dibujan pixel a
+pixel y se escalan con filtro NEAREST). Cada segundo sobrevivido suma puntos y
+acelera la caida de los obstaculos. Con **ESPACIO** podes disparar bolas de
+tela que atrapan obstaculos (2 puntos extra); tenes 3 cargas de tela que se
+regeneran cada 4 segundos. Tenes 3 vidas; al agotarlas es game over y podes
+reiniciar con ESPACIO o R.
 
 ## Requisitos y ejecucion
 
-[Indica el motor, herramientas, versiones y pasos necesarios para abrir o ejecutar el proyecto.]
+- Cualquier navegador moderno con conexion a internet (el script de Phaser se
+  carga desde CDN).
+- No requiere `npm install`, build ni servidor: abrir `index.html` basta.
+
+Pasos:
+1. Clona o descarga el repositorio.
+2. Doble clic en `index.html` (o sirvelo con cualquier servidor estatico).
 
 ## Controles
 
-[Describe los controles disponibles o indica que todavia no existen.]
+- Flechas izquierda / derecha o A / D: mover la arana.
+- ESPACIO: disparar una bola de tela que atrapa obstaculos (+2 puntos).
+- ESPACIO o R: reiniciar la partida luego del game over.
 
 ## Creditos
 
-[Declara assets, sonidos, tipografias, plugins, codigo, referencias y licencias de terceros.]
+- Motor: Phaser 3 (MIT) https://phaser.io
+- Todos los graficos del juego se generan proceduralmente con la API Graphics
+  de Phaser; no se usan assets de terceros.
 
 ## Entrega o demostracion
 
-[Agrega el enlace a una compilacion, video o publicacion cuando la entrega lo requiera.]
+[PENDIENTE - agregar enlace a compilacion, video o publicacion cuando lo pida la consigna]
